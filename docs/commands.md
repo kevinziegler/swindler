@@ -2,7 +2,7 @@
 ## Add
 Store a new database connection profile
 ```
-sw add <name>
+sw add <adapter> <name>
    --adapter
    --user
    --host
@@ -54,4 +54,16 @@ sw show <name>
 Destroy all connections associated with a given host
 ```
 sw forget-host <host>
+```
+
+## Copy a connection
+Copy a configuration profile
+```
+sw copy <name> <clone-name>
+```
+
+## Test a connection
+Tests if a given connection profile can connect to a host
+```
+sw test <name>
 ```
