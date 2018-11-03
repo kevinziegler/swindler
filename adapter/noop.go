@@ -4,12 +4,9 @@ import (
 	"fmt"
 )
 
-type Noop struct {
-	Name string
-	Thing string
-}
+type Noop struct {}
 
-func (a Noop) Show() {
-	fmt.Printf("add called: name=%s, thing=%s", a.Name, a.Thing)
+func (a Noop) Show(thing string) {
+	fmt.Printf("noop called: thing=%s", thing)
 	fmt.Println("")
 }

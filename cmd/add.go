@@ -38,8 +38,8 @@ to quickly create a Cobra application.`,
 		return nil
 	},
 	Run: func(cmd *cobra.Command, args []string) {
-		test := adapter.Noop{Name: args[0], Thing: args[1]}
-		test.Show()
+		test := adapter.Adapters[args[0]]
+		test.Show(args[1])
 	},
 }
 
