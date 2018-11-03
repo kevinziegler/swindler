@@ -6,7 +6,7 @@ import (
 
 type Noop struct {}
 
-func (a Noop) Show(thing string) {
+func (a Noop) Add(thing string) {
 	fmt.Printf("noop called: thing=%s", thing)
 	fmt.Println("")
 }

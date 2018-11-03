@@ -39,7 +39,7 @@ to quickly create a Cobra application.`,
 	},
 	Run: func(cmd *cobra.Command, args []string) {
 		test := adapter.Adapters[args[0]]
-		test.Show(args[1])
+		test.Add(args[1])
 	},
 }
 

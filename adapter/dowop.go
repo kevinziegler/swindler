@@ -6,7 +6,7 @@ import (
 
 type Dowop struct {}
 
-func (a Dowop) Show(thing string) {
+func (a Dowop) Add(thing string) {
 	fmt.Printf("dowop called: thing=%s", thing)
 	fmt.Println("")
 }

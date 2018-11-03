@@ -1,7 +1,7 @@
 package adapter
 
 type Adapter interface {
-	Show(string)
+	Add(string)
 }
 
 /*
