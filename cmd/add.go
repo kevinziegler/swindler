@@ -15,8 +15,8 @@
 package cmd
 
 import (
-	"fmt"
 	"errors"
+	"swindler/adapter"
 	"github.com/spf13/cobra"
 )
 
@@ -38,8 +38,8 @@ to quickly create a Cobra application.`,
 		return nil
 	},
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Printf("add called: adapter=%s, name=%s", args[0], args[1])
-		fmt.Println("")
+		test := adapter.Noop{Name: args[0], Thing: args[1]}
+		test.Show()
 	},
 }
 
